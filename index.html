@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Find your Tune</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1 class="app-title">Find your Tune</h1>
+      <p class="app-subtitle">
+        Type a line from a song and we’ll help you figure out what it is.
+      </p>
+    </header>
+
+    <section class="search-section">
+      <label for="lyricsInput">Enter lyrics or a verse:</label>
+      <div class="search-row">
+        <input
+          type="text"
+          id="lyricsInput"
+          placeholder='e.g. "some people live just for the fame"'
+        />
+        <button id="searchBtn">Search</button>
+      </div>
+      <div id="status" class="status-message"></div>
+      <div class="hint">
+        Tip: You can search by part of a lyric, song title, or artist name.
+      </div>
+    </section>
+
+    <section class="results-section">
+      <div class="results-title">Results</div>
+      <div id="resultsContainer"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
